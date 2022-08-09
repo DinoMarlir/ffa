@@ -1,5 +1,6 @@
 package de.dinomarlir.ffa
 
+import de.dinomarlir.ffa.listener.ConnectionListener
 import de.dinomarlir.ffa.logging.Logger
 import net.axay.kspigot.main.KSpigot
 
@@ -12,6 +13,8 @@ class FFA : KSpigot() {
 
     override fun startup() {
         logger.success("plugin loaded!")
+
+        ConnectionListener
     }
 
     override fun shutdown() {
