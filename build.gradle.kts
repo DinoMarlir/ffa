@@ -43,10 +43,10 @@ tasks {
 }
 
 bukkit {
-    name = "ExamplePlugin"
+    name = "FFA"
     apiVersion = "1.19"
     authors = listOf(
-        "Your Name",
+        "DinoMarlir",
     )
     main = "$group.ffa.FFA"
     version = getVersion().toString()
@@ -54,4 +54,5 @@ bukkit {
         "net.axay:kspigot:$kspigotVersion",
         "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0-RC"
     )
+    website = "https://github.com/DinoMarlir/ffa"
 }
