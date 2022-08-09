@@ -13,7 +13,7 @@ object ConnectionListener {
             val player = it.player
 
             if (ffaPlayers.containsKey(player.uniqueId)) ffaPlayers.remove(player.uniqueId)
-            if (!ffaPlayers.containsKey(player.uniqueId)) ffaPlayers[player.uniqueId] = FFAPlayer(player.uniqueId)
+            if (!ffaPlayers.containsKey(player.uniqueId)) ffaPlayers[player.uniqueId] = FFAPlayer(player.uniqueId, false)
 
             it.joinMessage = ""
         }

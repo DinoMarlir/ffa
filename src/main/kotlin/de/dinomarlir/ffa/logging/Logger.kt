@@ -19,7 +19,7 @@ class Logger() {
     }
 
     fun println(message: String) {
-        println(message)
+        System.out.println(message)
     }
 
     fun success(message: String) {
