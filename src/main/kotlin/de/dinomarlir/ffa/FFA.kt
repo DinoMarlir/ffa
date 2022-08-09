@@ -12,9 +12,7 @@ class FFA : KSpigot() {
 
     override fun startup() {
         de.dinomarlir.ffa.utils.logger.success("loaded")
-        de.dinomarlir.ffa.utils.logger.println("println")
-
-        ConnectionListener 
+        ConnectionListener
     }
 
     override fun shutdown() {
