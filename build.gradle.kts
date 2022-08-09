@@ -7,8 +7,8 @@ plugins {
     id("net.minecrell.plugin-yml.bukkit") version "0.5.1"
 }
 
-group = "org.example"
-version = "1.0.0"
+group = "de.dinomarlir"
+version = "0.1"
 
 repositories {
     mavenCentral()
@@ -46,7 +46,7 @@ bukkit {
     authors = listOf(
         "Your Name",
     )
-    main = "$group.exampleplugin.ExamplePlugin"
+    main = "$group.ffa.FFA"
     version = getVersion().toString()
     libraries = listOf(
         "net.axay:kspigot:$kspigotVersion",
