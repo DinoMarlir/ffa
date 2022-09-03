@@ -1,6 +1,10 @@
 package de.dinomarlir.ffa.utils
 
+import de.dinomarlir.ffa.config.ConfigurationFile
 import de.dinomarlir.ffa.logging.Logger
+import io.ktor.client.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 
@@ -15,3 +19,11 @@ val json = Json {
     prettyPrintIndent = "  "
 }
 
+var prefix = ConfigurationFile.config?.prefix?.replace("&", "§")
+val httpClient = HttpClient {
+
+}
+
+val scope = CoroutineScope(Dispatchers.IO)
+
+val version = "DEV-0.0.1"

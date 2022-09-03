@@ -22,6 +22,14 @@ dependencies {
     // KSpigot dependency
     implementation("net.axay", "kspigot", kspigotVersion)
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0-RC")
+
+
+    implementation("io.ktor:ktor-client-core:2.1.0")
+    implementation("io.ktor:ktor-client-cio:2.1.0")
+    implementation("io.ktor:ktor-client-content-negotiation:2.1.0")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.1.0")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 }
 
 tasks {
@@ -52,7 +60,13 @@ bukkit {
     version = getVersion().toString()
     libraries = listOf(
         "net.axay:kspigot:$kspigotVersion",
-        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0-RC"
+        "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0-RC",
+        "io.ktor:ktor-client-core:2.1.0",
+        "io.ktor:ktor-client-cio:2.1.0",
+        "io.ktor:ktor-client-content-negotiation:2.1.0",
+        "io.ktor:ktor-serialization-kotlinx-json:2.1.0",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+
     )
     website = "https://github.com/DinoMarlir/ffa"
 }
